@@ -7,18 +7,71 @@ body {
     padding: 0px;
     margin: 0px;
     overflow: hidden;
+    background-image: url(https://i.pinimg.com/originals/95/7b/de/957bdea80ffb2b87d429a4f05e42e6a2.jpg);
 }
 
 .game-container {
     position: relative;
     width: 352px;
     height: 198px;
-    outline: 1px solid white;
+    outline: 1px solid rgb(0, 0, 0);
     margin: 0 auto;
-
+    background: rgb(0, 106, 7);
     transform: scale(3) translateY(50%);
 }
 
 .game-container canvas {
     image-rendering: pixelated;
+}
+
+#topLineBreak {
+    margin-top: 50px;
+}
+
+#title {
+    font-size: 62px;
+    color: brown;
+    text-align: center;
+}
+
+#battleBt {
+    position: absolute;
+    top: 400px;
+    left: 1550px;
+    height: 100px;
+    width: 200px;
+    color: rgb(178, 178, 178);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    background-color: rgb(72, 44, 32);
+    border-radius: 20%;
+}
+
+#controlsText {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    height: 255px;
+    width: 325px;
+    top: 250px;
+    left: 50px;
+    display: center;
+    border: solid black 2px;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 65px;
+    border-radius: 45%;
+}
+
+.goBack {
+    position: absolute;
+    margin-top: 18px;
+    height: 40px;
+    width: 100px;
+    left: 50px;
+    color: rgb(178, 178, 178);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    background-color: rgb(72, 44, 32);
+    border-radius: 20%;
 }

@@ -23,12 +23,14 @@ body {
     background-color: rgb(57, 16, 11);
     border: solid black 2px;
     display: inline-block;
-    margin-top: 200px;
+    margin-top: 150px;
+    padding: 50px;
+    border-radius: 15%;
 }
 
 .mainButtons {
+    margin: 50px;
     display: block;
-    background-color: red;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -36,6 +38,10 @@ body {
     height: 80px;
     width: 800px;
     font-size: 40px;
+    color: rgb(178, 178, 178);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(72, 44, 32);
+    border-radius: 15%;
 }
 
 /* --------------------------------------------------
@@ -86,6 +92,11 @@ Character Selection Screen:
     height: 40px;
     width: 100px;
     left: 50px;
+    color: rgb(178, 178, 178);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    background-color: rgb(72, 44, 32);
+    border-radius: 20%;
 }
 
 .playerClassButton {
@@ -170,15 +181,19 @@ Character Creation Screen
     /* margin-top: 0px;
     display: flex;
     flex: center; */
-    height: 70px;
+    height: 90px;
     border: solid black 2px;
-    width: 70px;
-    left: 55px;
+    width: 90px;
+    left: 50px;
     margin-right: 300px;
-    top: 530px;
+    top: 520px;
     bottom: 50px;
     font-size: 18px;
     border-radius: 15%;
+    color: rgb(178, 178, 178);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    background-color: rgb(72, 44, 32);
 }
 
 #classDescription {
@@ -239,11 +254,31 @@ Character Creation Screen
     position: absolute;
     height: 70px;
     width: 150px;
-    left: 1150px;
+    left: 1070px;
     top: 250px;
     color: rgb(178, 178, 178);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 48px;
     background-color: rgb(72, 44, 32);
     border-radius: 20%;
+}
+
+#battleMain {
+    position: absolute;
+    left: 700px;
+    text-align: center;
+    height: 250px;
+    width: 500px;
+    background-color: black;
+    color: white;
+    padding-top: 150px;
+    font-size: 48px;
+}
+
+#okBt {
+    position: absolute;
+    font-size: 38px;
+    top: 460px;
+    left: 875px;
+    width: 150px;
 }

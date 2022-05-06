@@ -190,6 +190,8 @@ function toggleTheme() {
 
     // Change the value of href attribute 
     // to change the css sheet.
+    // And
+    // Hides game container + canvas when in menus:
     if (model.currentPage != 'gameContainer') {
         theme.setAttribute('href', './styles/styleMainMenu.css');
         targList = document.getElementsByClassName("game-container");
@@ -207,6 +209,7 @@ function toggleTheme() {
             }
         }
     }
+    // Sets game container + canvas visible
     else if (model.currentPage == 'gameContainer') {
         theme.setAttribute('href', './styles/styleGameContainer.css');
         targList = document.getElementsByClassName("game-container");
@@ -230,24 +233,6 @@ function toggleTheme() {
     render();
 }
 
-
-// function test() {
-//     // document.getElementsByClassName('game-container').style.visibility = "visible";
-//     // document.getElementsByClassName("game-canvas").style.visibility = "visible";
-//     // document.getElementById("mySidenav").style.width = "250px";
-//     targList = document.getElementsByClassName("game-container");
-//     document.getElementsByClassName("game-container")
-//     if (targList) {
-//         for (var x = 0; x < targList.length; x++) {
-//             targList[x].style.visibility = "visible";
-//         }
-//     }
-//     targList = document.getElementsByClassName("game-canvas");
-//     document.getElementsByClassName("game-canvas")
-//     if (targList) {
-//         for (var x = 0; x < targList.length; x++) {
-//             targList[x].style.visibility = "visible";
-//         }
-//     }
-//     // document.getElementById("game-container").style.visibility = "visible";
-// }
+function settingsPage() {
+    alert('Settings coming soon')
+}

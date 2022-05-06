@@ -16,6 +16,7 @@ function updateView() {
     if (model.currentPage == 'mainMenu') mainMenuPage();
     if (model.currentPage == 'charCreation') createCharacterPage();
     if (model.currentPage == 'gameContainer') gameContainerPage();
+    if (model.currentPage == 'battleScreen') battleScreenPage();
     render();
 }
 
@@ -33,7 +34,7 @@ function mainMenuPage() {
     <div id="title">Forest of Adventure</div><hr>
         <div id="buttonGrid">
         <button class="mainButtons" onclick="changePage('classSelection')">Play Game</button>
-        <button class="mainButtons" onclick="tryingComms()">Settings</button>
+        <button class="mainButtons" onclick="settingsPage()">Settings</button>
 
         </div>
     </div>
@@ -122,12 +123,25 @@ function gameContainerPage() {
     <hr>
     <button class="goBack" onclick="changePage('classSelection')">Back</button>
     <div id="title">Forest of Adventure</div><hr>
-
-    
+    <div id="controlsText">${model.inputsDesc}</div>
     </div>
+    <button id="battleBt" onclick="changePage('battleScreen')">Battle!</button>
     `
-    //<button onclick="toggleTheme()">Test StyleSwitch</button>
-
     render();
 }
+
+
+function battleScreenPage() {
+    model.view = /*html*/ `
+    <div id="mainMenu">
+    <div id="topLineBreak"> </div>
+    <hr>
+    <button class="goBack" onclick="changePage('classSelection')">Back</button>
+    <div id="title">Forest of Adventure</div><hr>
+    <div id="battleMain">${model.battleText}</div>
+    <button id="okBt" onclick="changePage('mainMenu')">Ok</button>
+    `
+    render();
+}
+
 render();

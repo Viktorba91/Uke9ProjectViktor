@@ -77,5 +77,7 @@ const model = {
     classDescription: '',
     warriorDesc: 'The warrior benefits extra from strength, has higher starting vitality, favors heavy armor and swords, maces, axes and shields.',
     wizardDesc: 'The Wizard benefits extra from intellect, uses light armor and spellcasting to strike down foes.',
-    thiefDesc: 'The Thief is an assassin that favors dexterity for damage output and critical strikes, uses medium armor and prefer dual wielding daggers.'
+    thiefDesc: 'The Thief is an assassin that favors dexterity for damage output and critical strikes, uses medium armor and prefer dual wielding daggers.',
+    inputsDesc: 'Use [W],[A],[S],[D] or Arrow Keys to move',
+    battleText: 'Work in progress!',
 }
