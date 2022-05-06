@@ -1,0 +1,249 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/95/7b/de/957bdea80ffb2b87d429a4f05e42e6a2.jpg);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#mainMenu {
+    text-align: center;
+}
+
+#topLineBreak {
+    margin-top: 50px;
+}
+
+#title {
+    font-size: 62px;
+    color: brown;
+
+}
+
+#buttonGrid {
+    background-color: rgb(57, 16, 11);
+    border: solid black 2px;
+    display: inline-block;
+    margin-top: 200px;
+}
+
+.mainButtons {
+    display: block;
+    background-color: red;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-inline: 10px;
+    height: 80px;
+    width: 800px;
+    font-size: 40px;
+}
+
+/* --------------------------------------------------
+
+Character Selection Screen: 
+
+*/
+
+#pickClassTitle {
+    font-size: 48px;
+    color: brown;
+    margin-bottom: 20px;
+
+}
+
+#classTitles {
+    font-size: 36px;
+    color: brown;
+    /* border: solid black 3px; */
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#warriorTitle {
+    display: flex;
+    margin-left: 340px;
+    text-align: center;
+}
+
+#wizardTitle {
+    display: table-cell;
+    text-align: center;
+}
+
+#thiefTitle {
+    display: flex;
+    margin-left: 200px;
+    text-align: center;
+
+}
+
+.goBack {
+    position: absolute;
+    margin-top: 18px;
+    height: 40px;
+    width: 100px;
+    left: 50px;
+}
+
+.playerClassButton {
+    cursor: pointer;
+    height: 500px;
+    width: 500px;
+    display: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#warriorImg {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/317/750/554/drawing-concept-art-warrior-armor-fantasy-art-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: -65px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+#wizardImg {
+    background-image: url(https://i1.sndcdn.com/artworks-2trXzA8Gc3N80FBW-PYEy8Q-t500x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#thiefImg {
+    background-image: url(https://i.pinimg.com/originals/81/4c/f4/814cf4051ce5971dc753f9c5ffd60d7c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -65px;
+}
+
+
+/* --------------------------------------------------
+Character Creation Screen
+*/
+
+#characterSheet {
+    position: relative;
+    border: solid black 5px;
+    /* display: inline-block; */
+    left: 20px;
+    height: 700px;
+    width: 1000px;
+    background-color: rgba(0, 22, 82, 0.7);
+}
+
+#classImg {
+    position: absolute;
+    pointer-events: none;
+    Text-Decoration: None !important;
+    object-fit: cover;
+    display: block;
+    border: solid black 3px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 400px;
+    width: 300px;
+
+}
+
+#sheetText {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 400px;
+    border: solid black 5px;
+    display: block;
+    height: 690px;
+    width: 500px;
+}
+
+#classSheetTitle {
+    font-size: 36px;
+    color: brown;
+}
+
+#diceRoll {
+    position: absolute;
+    /* margin-top: 0px;
+    display: flex;
+    flex: center; */
+    height: 70px;
+    border: solid black 2px;
+    width: 70px;
+    left: 55px;
+    margin-right: 300px;
+    top: 530px;
+    bottom: 50px;
+    font-size: 18px;
+    border-radius: 15%;
+}
+
+#classDescription {
+    font-size: 24px;
+    color: brown;
+    position: relative;
+    margin-top: 15px;
+
+}
+
+#sheetStats {
+    font-size: 28px;
+    color: brown;
+
+    margin-top: 90px;
+    /* display: grid;
+    grid-auto-flow: row;
+    grid-column-gap: 5px; */
+}
+
+.addStatPoints {
+    position: absolute;
+    display: right;
+    left: 450px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 5px;
+    height: 25px;
+    width: 35px;
+
+}
+
+.delStatPoints {
+    position: absolute;
+    display: right;
+    left: 400px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 5px;
+    height: 25px;
+    width: 35px;
+
+}
+
+.statBreak {
+    margin-top: 50px;
+}
+
+#bonusStats {
+    color: brown;
+    position: absolute;
+    left: 310px;
+    top: 145px;
+    font-size: 22px;
+}
+
+#playBt {
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    left: 1150px;
+    top: 250px;
+    color: rgb(178, 178, 178);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    background-color: rgb(72, 44, 32);
+    border-radius: 20%;
+}
